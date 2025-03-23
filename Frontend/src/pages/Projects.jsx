@@ -1,15 +1,119 @@
-import React from 'react'
+import React from "react";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import reactCompImg from "../assets/image/reactcomp.png";
+import modernImg from "../assets/image/modern.png";
+import reactToolkitImg from "../assets/image/reactToolkit.png";
+import shopCartImg from "../assets/image/shopCart.png";
+
+
+const projects = [
+  {
+    id: 1,
+    title: "E-Commerce Website",
+    description: "A fully functional e-commerce website built with MERN stack.",
+    image: shopCartImg, // Local image use ho rahi hai
+    github: "https://github.com/VikashKmr1106",
+    live: "https://shop-cart-rho-seven.vercel.app/",
+  },
+  {
+    id: 2,
+    title: "Task Manager",
+    description: "A React-based task management app with Redux & local storage.",
+    image: reactToolkitImg,
+    github: "https://github.com/VikashKmr1106",
+    live: "https://react-redux-toolkit-gamma.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "Modern Website UI",
+    description: "A modern and responsive website built with React and Tailwind CSS.",
+    image: modernImg,
+    github: "https://github.com/VikashKmr1106",
+    live: "https://vercel.com/vikashs-projects-d0fc81b5/website-73o7",
+  },
+  {
+    id: 4,
+    title: "React Components Showcase",
+    description:
+      "A collection of reusable React components, including a To-Do List, Accordion, Tabs, Toast, Drag & Drop, and more.",
+    image: reactCompImg,
+    github: "https://github.com/VikashKmr1106", // Iska correct GitHub repo daalna
+    live: "https://project-mocha-rho.vercel.app/",
+  },
+];
+
 
 const Projects = () => {
-	return (
-		<section id="hero" className="bg-white">
-					<div className="max-w-7xl lg:mx-24 md:mx-16 sm:mx-8 lg:px-12 md:px-8 sm:px-6 mx-4 px-4 mt-4 mb-4  p-4">
-						<div className="flex flex-col-reverse lg:flex-row items-center justify-between">
-						 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, error tempora. Error similique esse ducimus aperiam hic temporibus officia voluptate sint aliquam voluptatum aliquid, cupiditate facere exercitationem vel minima enim porro? Magni assumenda fuga ab officiis saepe ratione. Sunt aspernatur, ullam ipsa beatae magni nostrum, placeat commodi quae, a veniam ad ratione obcaecati amet tenetur debitis distinctio. Doloribus, dolores accusantium unde cum in tempora quaerat optio vero, dicta voluptatibus molestias animi consequatur porro earum atque, sapiente eius at rerum laudantium! Provident consectetur quia eaque voluptatum dignissimos nihil asperiores ipsa consequuntur natus, possimus perferendis autem. Optio, fugiat nemo. Nobis quis assumenda culpa voluptate, aspernatur, atque quidem modi molestias quisquam provident est recusandae consectetur iusto autem quos quia molestiae voluptates iure sequi ut deserunt et? Repellat eum consequatur facilis officiis corporis quibusdam, animi maxime fugiat possimus officia sit provident quis eius minus modi! Quasi distinctio alias maiores quas debitis nemo, numquam amet nostrum qui blanditiis? Officia deserunt ullam repellat excepturi quam esse adipisci nulla tempore, dolorum sed nihil explicabo similique, voluptatibus dicta? Soluta quos molestias facilis nisi reiciendis ducimus voluptas corrupti, non illo dolorum harum cum et aliquid porro, ipsam quaerat perspiciatis magni provident repudiandae eveniet eum. Culpa, rem, qui labore ratione facere expedita totam, cumque cum nulla omnis consequatur rerum impedit incidunt! Odit repellendus quisquam, quam odio velit maxime sunt! Laudantium quibusdam ipsam odio temporibus sed eos quas quo est aperiam fuga. Quia voluptate reiciendis libero ipsa eius tenetur quam minus voluptatem? Eos dolore veritatis odio totam, eligendi nobis ullam debitis ab ratione magnam minima repudiandae omnis voluptates quod asperiores molestias inventore quisquam, officia dignissimos quo. Ex maxime debitis autem nulla incidunt sit corrupti temporibus quasi vitae est voluptatem, deserunt aut magnam dicta, iste numquam officiis, atque dolorem aperiam sequi. Odio enim consequuntur autem tempore fugit. Possimus perspiciatis accusamus necessitatibus atque id facere deleniti dicta dignissimos a ab eaque qui ut porro, aliquam quaerat vitae pariatur odio velit magni dolore placeat sit libero voluptatum aliquid! Facere molestiae expedita officia sit ad, repudiandae voluptate illum, neque ut laudantium ipsa quisquam, animi tenetur! Illo omnis placeat vel at. Necessitatibus minus quae aut in distinctio magni vel, sint nulla, reprehenderit expedita quis voluptas eum velit accusamus officiis? Nesciunt sint eius sunt possimus? Reiciendis dolorum voluptatem saepe dolor itaque aspernatur ad! Quae quibusdam fugiat amet blanditiis, quia, soluta necessitatibus quis, quos ex quasi tempore? Explicabo, fugiat. Doloremque soluta assumenda inventore dolorem harum. Sed, reiciendis. Obcaecati illo officia fugit laudantium molestiae repudiandae ut quaerat necessitatibus numquam eligendi eum inventore ipsam ipsa quo laboriosam eaque, facere a doloremque quos autem nemo tempora voluptates aperiam eos. Dignissimos error ipsam debitis quis officia harum, pariatur dolorum ut laudantium voluptatem exercitationem, architecto doloremque consequuntur ipsum laborum? Nihil temporibus tempore qui cum quibusdam consequuntur quidem obcaecati at necessitatibus dignissimos quos possimus saepe doloremque rerum expedita, rem laborum ipsum, illo aliquid ea eius distinctio excepturi repellendus fugiat! Laudantium libero inventore ullam molestiae dolorum molestias natus, dolores, ipsam suscipit eaque impedit labore. Ipsa praesentium officiis, ipsam beatae rem tempore doloremque illo aperiam. Ad modi officiis aperiam aliquam sapiente aut adipisci vero perspiciatis doloribus exercitationem, neque repudiandae sint itaque excepturi illo pariatur accusantium voluptates cupiditate inventore illum soluta in, nesciunt tempore eligendi. Cum, labore! Sint aut nulla magnam vel fugiat rerum earum non, asperiores labore sed adipisci voluptates delectus dolorum quaerat quis nisi consequatur voluptatum? Et assumenda quod officiis, odit eius ad ducimus pariatur ipsa veritatis, animi, quia rerum. Dicta velit laborum quidem dignissimos facere dolore cum, similique harum ad enim odio officia maxime quam asperiores reprehenderit totam mollitia error, assumenda libero! Eos, dolores nemo facere tenetur natus, soluta ipsam veritatis eius ipsum hic adipisci! Eaque, et. Quidem earum iure eum. Saepe maiores nostrum dolor temporibus? Esse maxime voluptas ut voluptate doloribus possimus ad vel alias delectus ipsa quasi officia, animi illo adipisci impedit minus? Saepe, eveniet placeat optio dicta deleniti sunt quo, eius maiores minima ipsa ab voluptates ipsum? Dolor inventore eos recusandae, ipsum, voluptate animi corrupti ullam iusto eius aperiam sit deleniti in. Nam ipsa ipsum ut, deserunt quod maxime magnam iusto, sint sequi aut dolores vero architecto tempore unde quaerat eaque accusamus, aspernatur assumenda. Ratione perspiciatis quidem fuga necessitatibus voluptatem eos dolor voluptate, numquam animi! Est quidem expedita qui eligendi, ratione architecto libero, alias blanditiis repellendus esse consequuntur! Debitis sed nesciunt vel aspernatur, ipsa accusamus dolores similique ducimus dicta, reprehenderit et sit rem repudiandae sint fugiat sequi laborum illo consequatur maiores? Quis, illum odio quae fuga numquam soluta omnis. Similique, labore qui dignissimos nisi voluptatibus itaque unde doloremque veritatis debitis quos id explicabo dolores in earum tempora harum quia, corrupti quibusdam laboriosam? Amet fuga eligendi possimus repellat nostrum beatae eveniet eaque dolores aut velit? Asperiores quas repellendus fugiat sunt illum laborum rerum, nihil veritatis ad quod cumque? Ad maxime corrupti tempora aliquid repellendus magnam rem. Rerum expedita sit aliquam fugit perspiciatis vel corrupti eligendi accusantium odio? Cumque tempore doloribus saepe similique, nam provident, maiores praesentium nostrum itaque id at eveniet sequi vero quibusdam unde ducimus officiis voluptate nesciunt. Quae ab ad aliquid sit, explicabo libero similique doloremque blanditiis ipsum minima, odit nulla itaque, repellendus inventore ut expedita tempore ullam tenetur! Voluptatem ipsam earum necessitatibus minus adipisci, numquam molestiae quae sit nisi pariatur quam a voluptas tenetur, excepturi voluptatibus asperiores? Impedit minus ipsa placeat, possimus exercitationem assumenda quod quo ullam iste nihil consequatur ducimus debitis fugiat eligendi enim, voluptate reprehenderit modi vero nisi. Aut, et commodi sapiente minus cupiditate cumque fugit repellendus blanditiis provident eius earum enim cum, sequi natus architecto nam rerum! Aperiam, molestiae voluptate ut odio consequuntur alias eos officiis velit exercitationem dolore deleniti modi nulla fuga? Nesciunt earum, inventore ullam, neque architecto dolorem quo nulla doloribus fuga dolores officia ipsam fugit magnam, beatae nostrum eaque dolor animi iusto aliquam! Esse consequatur explicabo eaque praesentium doloribus rerum minus officia, quas totam molestias modi aliquam similique. Aliquid vel assumenda incidunt vero soluta voluptas ducimus sed perferendis quae error delectus, fugit, accusamus libero harum officia esse quaerat ratione nostrum reiciendis cum numquam maiores illum? Veniam distinctio voluptas incidunt rem, suscipit officia sed.
-						</div>
-					</div>
-				</section>
-	)
-}
+  return (
+    <section id="projects" className="bg-gray-50 py-16">
+      <div className="w-full max-w-7xl mx-auto px-6 lg:px-12 text-center">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800">
+          Projects
+        </h2>
 
-export default Projects
+        {/* Decorative Line */}
+        <div className="flex justify-center my-4">
+          <svg
+            viewBox="0 0 200 20"
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-40 sm:w-48 md:w-56 text-orange-400"
+          >
+            <path
+              d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            ></path>
+          </svg>
+        </div>
+
+        {/* Projects Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+          {projects.map((project) => (
+            <div
+              key={project.id}
+              className="bg-white rounded-xl shadow-lg transition-all duration-300 
+              transform hover:scale-105 hover:shadow-2xl border border-gray-200 hover:border-orange-400 overflow-hidden"
+            >
+							 <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-56 object-cover"
+              />
+              <div className="p-6 text-left">
+                <h3 className="text-xl font-normal text-gray-800">
+                  {project.title}
+                </h3>
+                <p className="text-gray-600 font-normal text-sm mt-2">{project.description}</p>
+                <div className="mt-4 flex items-center justify-between ">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-700 hover:text-gray-900 flex items-center gap-2"
+                  >
+                    <FaGithub />
+                    GitHub
+                  </a>
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:text-blue-800 flex items-center gap-2"
+                    >
+                      <FaExternalLinkAlt />
+                      Live Demo
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;

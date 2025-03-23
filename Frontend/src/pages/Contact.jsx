@@ -38,16 +38,10 @@ const Contact = () => {
 							<p className='text-gray-700 flex items-center gap-3'>
 								📍 Faridabad, Haryana
 							</p>
+							<p>Email: <a href="mailto:vikash.kmr11106@gmail.com" className="text-blue-400">vikash.kmr11106@gmail.com</a></p>
+							<p>LinkedIn: <a target='_blank' href="https://www.linkedin.com/in/vikash-61230a16b?utm_source=za&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="text-blue-400">Vikash</a></p>
 							<p className='text-gray-700 flex items-center gap-3'>
-								📧{' '}
-								<a
-									href='mailto:vikash.kmr1106@gmail.com'
-									className='hover:text-orange-500 transition'>
-									vikash.kmr1106@gmail.com
-								</a>
-							</p>
-							<p className='text-gray-700 flex items-center gap-3'>
-								📞{' '}
+								Mobile: 
 								<a
 									href='tel:+919953856353'
 									className='hover:text-orange-500 transition'>

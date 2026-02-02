@@ -4,6 +4,7 @@ import reactCompImg from "../assets/image/reactcomp.png";
 import modernImg from "../assets/image/modern.png";
 import reactToolkitImg from "../assets/image/reactToolkit.png";
 import shopCartImg from "../assets/image/shopCart.png";
+import teedex from '../assets/image/teedex.png'
 
 
 const projects = [
@@ -39,6 +40,15 @@ const projects = [
     image: reactCompImg,
     github: "https://github.com/VikashKmr1106", // Iska correct GitHub repo daalna
     live: "https://project-mocha-rho.vercel.app/",
+  },
+  {
+    id: 5,
+    title: "Custom T-shirt Design (Freelancing Project)",
+    description:
+      "Contributed to the development of a responsive, customisable t-shirt design platform by implementing dynamic product listing and seamless cart management.",
+    image: teedex,
+    
+    live: "https://teedex.in/",
   },
 ];
 

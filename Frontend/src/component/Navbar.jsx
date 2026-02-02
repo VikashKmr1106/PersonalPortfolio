@@ -26,7 +26,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-6">
+          <nav className=" hidden md:!block space-x-8">
             {menu.map((menuItem) => (
               <Link
                 key={menuItem.name}
@@ -43,7 +43,7 @@ const Navbar = () => {
           </nav>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden" onClick={() => setIsOpen(true)}>
+          <button className="block md:hidden" onClick={() => setIsOpen(true)}>
             <Menu size={28} />
           </button>
         </div>

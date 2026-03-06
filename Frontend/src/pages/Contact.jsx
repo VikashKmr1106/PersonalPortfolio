@@ -1,87 +1,150 @@
-import React from 'react';
+import React from "react";
+import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
 
 const Contact = () => {
-	return (
-		<section id='contact' className='bg-gray-50'>
-			<div className='w-full max-w-7xl mx-auto px-6 lg:px-12 py-8 bg-gray-50 text-center'>
-				{/* Section Title */}
-				<h2 className='text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800'>
-					Contact Us
-				</h2>
+  return (
+    <section
+      id="contact"
+      className="relative py-20 bg-gradient-to-b from-gray-50 to-white"
+    >
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        
+        {/* Section Heading */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800">
+            Let's Work Together
+          </h2>
+          <p className="text-gray-600 mt-4 text-lg max-w-2xl mx-auto">
+            Have a project in mind or want to collaborate? I’d love to hear from you.
+          </p>
 
-				{/* Title Shape (SVG Line) */}
-				<div className='flex justify-center my-4'>
-					<svg
-						viewBox='0 0 200 20'
-						xmlns='http://www.w3.org/2000/svg'
-						className='w-40 sm:w-48 md:w-56 text-orange-400'>
-						<path
-							d='M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10'
-							fill='none'
-							stroke='currentColor'
-							strokeWidth='2'></path>
-					</svg>
-				</div>
+          <div className="flex justify-center mt-6">
+            <div className="w-24 h-1 bg-orange-500 rounded-full"></div>
+          </div>
+        </div>
 
-				<div className='flex flex-col lg:flex-row items-start  justify-between gap-12'>
-					{/* Left Section - Contact Info */}
-					<div className='lg:w-1/2 w-full h-max text-center lg:text-left bg-white p-6 rounded-lg shadow-[0_0_30px_rgba(0,0,0,0.05)] hover:shadow-2xl transition duration-300'>
-						<h2 className='text-3xl sm:text-4xl font-bold text-gray-900'>
-							Get In Touch
-						</h2>
-						<p className='text-gray-600 mt-4 text-lg'>
-							Have a project in mind or just want to say hi? Feel free to reach out!
-						</p>
+        <div className="grid lg:grid-cols-2 gap-12">
+          
+          {/* Contact Info Card */}
+         <div className="bg-white/70 backdrop-blur-lg p-8 rounded-2xl shadow-xl border border-orange-100 hover:shadow-2xl transition duration-500">
 
-						{/* Contact Details */}
-						<div className='mt-6 space-y-4'>
-							<p className='text-gray-700 flex items-center gap-3'>
-								📍 Faridabad, Haryana
-							</p>
-							<p>Email: <a href="mailto:vikash.kmr11106@gmail.com" className="text-blue-400">vikash.kmr11106@gmail.com</a></p>
-							<p>LinkedIn: <a target='_blank' href="https://www.linkedin.com/in/vikash-61230a16b?utm_source=za&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="text-blue-400">Vikash</a></p>
-							<p className='text-gray-700 flex items-center gap-3'>
-								Mobile: 
-								<a
-									href='tel:+919953856353'
-									className='hover:text-orange-500 transition'>
-									+91 9953856353
-								</a>
-							</p>
-						</div>
-					</div>
+  <h3 className="text-2xl font-semibold text-gray-800">
+    Get In Touch
+  </h3>
 
-					{/* Right Section - Contact Form */}
-					<div className='lg:w-1/2 w-full bg-white p-6 rounded-lg shadow-[0_0_30px_rgba(0,0,0,0.05)] hover:shadow-2xl transition duration-300'>
-						<h3 className='text-2xl font-semibold text-gray-900'>
-							Send a Message
-						</h3>
-						<form className='mt-6 space-y-4'>
-							<input
-								type='text'
-								placeholder='Your Name'
-								className='w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-400 outline-none transition duration-300 hover:shadow-md'
-							/>
-							<input
-								type='email'
-								placeholder='Your Email'
-								className='w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-400 outline-none transition duration-300 hover:shadow-md'
-							/>
-							<textarea
-								rows='4'
-								placeholder='Your Message'
-								className='w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-400 outline-none transition duration-300 hover:shadow-md'></textarea>
-							<button
-								type='submit'
-								className='w-full bg-orange-500 text-white py-3 rounded-md hover:bg-orange-600 transition duration-300 hover:shadow-lg'>
-								Send Message
-							</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</section>
-	);
+  <p className="text-gray-600 mt-3 leading-relaxed">
+    I’m currently open to freelance projects, full-time opportunities,
+    and exciting collaborations. If you have something interesting in mind,
+    let’s build it together 🚀
+  </p>
+
+  {/* Availability Badge */}
+  <div className="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-green-100 text-green-700 text-sm font-medium rounded-full">
+    <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+    Available for Work
+  </div>
+
+  {/* Contact Details */}
+  <div className="mt-8 space-y-6 grid grid-cols-2 text-gray-700">
+
+    <div className="flex items-start gap-4">
+      <MapPin className="text-orange-500 mt-1" />
+      <div>
+        <p className="font-medium text-gray-800">Location</p>
+        <p className="text-gray-600 text-sm">Faridabad, Haryana</p>
+      </div>
+    </div>
+
+    <div className="flex items-start  gap-4">
+      <Mail className="text-orange-500 mt-1" />
+      <div>
+        <p className="font-medium text-gray-800">Email</p>
+        <a
+          href="mailto:vikash.kmr11106@gmail.com"
+          className="text-gray-600 text-sm hover:text-orange-500 transition"
+        >
+          vikash.kmr11106@gmail.com
+        </a>
+      </div>
+    </div>
+
+    <div className="flex items-start gap-4">
+      <Phone className="text-orange-500 mt-1" />
+      <div>
+        <p className="font-medium text-gray-800">Phone</p>
+        <a
+          href="tel:+919953856353"
+          className="text-gray-600 text-sm hover:text-orange-500 transition"
+        >
+          +91 9953856353
+        </a>
+      </div>
+    </div>
+
+    <div className="flex items-start gap-4">
+      <Linkedin className="text-orange-500 mt-1" />
+      <div>
+        <p className="font-medium text-gray-800">LinkedIn</p>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/vikash-61230a16b"
+          className="text-gray-600 text-sm hover:text-orange-500 transition"
+        >
+          View Profile
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  {/* Bottom Note */}
+  <p className="text-sm text-gray-500 mt-8">
+    I usually respond within 24 hours. Looking forward to connecting with you!
+  </p>
+
+</div>
+
+          {/* Contact Form */}
+          <div className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition duration-500">
+            <h3 className="text-2xl font-semibold text-gray-800 mb-6">
+              Send a Message
+            </h3>
+
+            <form className="space-y-5">
+              
+              <input
+                type="text"
+                placeholder="Your Name"
+                className="w-full p-4 rounded-xl border border-gray-200 focus:border-orange-400 focus:ring-2 focus:ring-orange-200 outline-none transition duration-300"
+              />
+
+              <input
+                type="email"
+                placeholder="Your Email"
+                className="w-full p-4 rounded-xl border border-gray-200 focus:border-orange-400 focus:ring-2 focus:ring-orange-200 outline-none transition duration-300"
+              />
+
+              <textarea
+                rows="5"
+                placeholder="Your Message"
+                className="w-full p-4 rounded-xl border border-gray-200 focus:border-orange-400 focus:ring-2 focus:ring-orange-200 outline-none transition duration-300"
+              ></textarea>
+
+              <button
+                type="submit"
+                className="w-full py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-xl hover:shadow-lg hover:-translate-y-1 transition duration-300"
+              >
+                Send Message 🚀
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Contact;

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Outlet, Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import ScrollToTop from "./ScrollToTop.jsx";
+import AdvancedCursor from "./AdvancedCursor.jsx";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -92,6 +94,8 @@ const Navbar = () => {
       {/* Page Content */}
       <main>
         <Outlet />
+        <ScrollToTop />
+        <AdvancedCursor />
       </main>
     </>
   );
